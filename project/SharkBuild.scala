@@ -34,7 +34,7 @@ object SharkBuild extends Build {
 
   // Hadoop version to build against. For example, "0.20.2", "0.20.205.0", or
   // "1.0.1" for Apache releases, or "0.20.2-cdh3u3" for Cloudera Hadoop.
-  val DEFAULT_HADOOP_VERSION = "1.0.4"
+  val DEFAULT_HADOOP_VERSION = "2.0.0-cdh4.2.0"
 
   lazy val hadoopVersion = env("SHARK_HADOOP_VERSION") orElse
                            env("SPARK_HADOOP_VERSION") getOrElse
